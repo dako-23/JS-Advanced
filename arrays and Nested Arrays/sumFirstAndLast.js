@@ -4,13 +4,6 @@ function solve(arr) {
 
 
 
-
-
-
-
-
-
-
 }
 console.log(solve(['10', '15', '20']));
 
