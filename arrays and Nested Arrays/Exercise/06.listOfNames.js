@@ -8,4 +8,4 @@ function solve(arr) {
     )
 
 }
-console.log(solve(["John", "Bob", "Christina", "Ema"]));
+solve(["John", "Bob", "Christina", "Ema"]);
