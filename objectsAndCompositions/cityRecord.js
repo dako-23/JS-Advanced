@@ -5,19 +5,21 @@ function solve(name, population, treasury) {
         population,
         treasury,
         taxRate: 10,
-
-        collectTaxes() {
-            this.treasury += Math.floor(this.population * this.taxRate)
-        },
-
-        applyGrowth(percent) {
-            this.population += Math.floor((percent / 100) * this.population)
-
-        },
-        applyRecesion(percent) {
-            this.treasury -= Math.ceil((percent / 100) * this.treasury)
-        },
     };
+
+
+    city.collectTaxes = function () {
+        this.treasury += Math.floor(this.population * this.taxRate)
+    }
+
+    city.applyGrowth = function (percent) {
+        this.population += Math.floor((percent / 100) * this.population)
+
+    }
+
+    city.applyRecesion = function (percent) {
+        this.treasury -= Math.ceil((percent / 100) * this.treasury)
+    }
 
     return city
 
