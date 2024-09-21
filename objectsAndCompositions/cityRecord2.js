@@ -33,8 +33,10 @@ const result = solve('Tortuga',
     7000,
     15000);
 
-// console.log(result);
-addTaxBehavior(result)
 console.log(result);
+console.log(JSON.stringify(result));
+
+// addTaxBehavior(result)
+// console.log(result);
 
 
