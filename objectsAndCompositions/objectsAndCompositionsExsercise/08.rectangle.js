@@ -11,11 +11,7 @@ function rectangle(width, height, color) {
             return this.width * this.height
         }
 
-
     }
-
-
-
 
 
 }
