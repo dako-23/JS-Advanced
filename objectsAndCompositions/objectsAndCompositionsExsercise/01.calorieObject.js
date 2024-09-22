@@ -3,14 +3,20 @@ function solve(arr) {
     const result = {};
     // let cal = [];
 
-    arr.forEach((el, i) => {
+    for (let i = 0; i < arr.length; i += 2) {
+        const key = arr[i]
+        const value = Number(arr[i + 1])
 
-        
-        
+        result[key] = value
 
-    });
+    }
 
-    
+
+
+
+
+
+
 
     console.log(result);
 
