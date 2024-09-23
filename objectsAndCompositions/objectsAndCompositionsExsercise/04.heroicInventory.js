@@ -10,7 +10,7 @@ function solve(arr) {
         level = Number(level)
         items = items ? items.split(', ') : [];
 
-        if (name, level, items) {
+        if (name && level && items) {
             result.push({ name, level, items })
         }
 
