@@ -4,28 +4,31 @@ function deleteByEmail() {
     const pattern = inputEl.value.toLowerCase();
 
 
-    if (!pattern) {
-        // outputEl.textContent = 'Not found.'
-        return;
-    }
+    if (!pattern) return;
+
 
 
     const rows = document.querySelectorAll('#customers tbody tr')
 
-    rows.forEach((el, index) => {
+    let found = false;
 
-        if (el.textContent.toLowerCase().includes(pattern)) {
-            outputEl.textContent = 'Deleted.'
+    rows.forEach((el, index) => {
+        const content = el.children[1];
+
+        if (content.textContent.toLowerCase().includes(pattern)) {
+            // outputEl.textContent = 'Deleted.'
             el.remove()
-        } else {
-            outputEl.textContent = 'Not found.'
+            found = true;
         }
     })
 
-
     inputEl.value = ''
 
-
+    if (found) {
+        outputEl.textContent = 'Deleted.'
+    } else {
+        outputEl.textContent = 'Not found..'
+    }
 
 
 
