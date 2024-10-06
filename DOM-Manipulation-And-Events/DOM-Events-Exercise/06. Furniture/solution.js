@@ -57,9 +57,9 @@ function solve() {
       decFactor: Number(i.childNodes[3].textContent)
     }))
 
-    let output = `Bought furniture: ${data.map(e => e.name).join(', ')}\n`
-    output += `Total price: ${data.reduce((acc, el) => { return acc = acc + el.price.toFixed(2) }, 0)}\n`
-    output += `Average decoration factor: ${data.reduce((acc, el) => { return acc = acc + el.decFactor }, 0 / data.length)}`
+    let output =`Bought furniture: ${data.map(e => e.name).join(', ')}\n`
+    output +=`Total price: ${data.reduce((acc, el) => { return acc = acc + el.price }, 0).toFixed(2)}\n`
+    output +=`Average decoration factor: ${data.reduce((acc, el) => { return acc = acc + el.decFactor / data.length }, 0)}`
 
     outputEl.value = output
 
