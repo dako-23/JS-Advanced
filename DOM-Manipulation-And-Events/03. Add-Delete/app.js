@@ -1,9 +1,6 @@
 const inputEl = document.querySelector('#newItemText');
 const listEl = document.querySelector('#items')
 
-
-
-
 function addItem() {
 
 
