@@ -22,5 +22,4 @@ describe('Add/Subtract', function () {
         calc.subtract(1)
         expect(calc.get()).to.equal(-1);
     })
-
 })
