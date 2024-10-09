@@ -1,5 +1,5 @@
-import { expect } from 'chai';
 import { sum } from './sumOfNumbers.js';
+import { expect } from 'chai';
 import { describe } from 'mocha';
 
 
@@ -34,13 +34,18 @@ describe('Sum Numbers', function () {
         });
 
         it('Sums negative numbers', () => {
-            expect(sum([10, 20, 30, 40])).to.equal(-100);
+            expect(sum([-10, -20, -30, -40])).to.equal(-100);
         });
 
     });
+
+    
 
 
 
 
 
 })
+
+
+//asdasdasdasdddddddddddddddddddddddddddd asd asd 
