@@ -14,11 +14,13 @@ describe('Add/Subtract', function () {
     })
 
     it('can add number', () => {
-        expect(calc.get(1)).to.equal(1);
+        calc.add(1)
+        expect(calc.get()).to.equal(1);
     })
 
     it('negative num', () => {
-        expect(calc.get(1)).to.equal(-1);
+        calc.subtract(1)
+        expect(calc.get()).to.equal(-1);
     })
 
 })
