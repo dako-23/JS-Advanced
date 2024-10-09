@@ -6,3 +6,7 @@ function createCalculator() {
         get: function () { return value; }
     }
 }
+
+export {
+    createCalculator
+}

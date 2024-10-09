@@ -6,6 +6,6 @@ function sum(arr) {
     return sum;
 }
 
-// export {
-//     sum
-// }
+export {
+    sum
+}
