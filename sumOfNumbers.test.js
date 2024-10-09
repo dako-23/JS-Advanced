@@ -39,13 +39,10 @@ describe('Sum Numbers', function () {
 
     });
 
-    
+
 
 
 
 
 
 })
-
-
-//asdasdasdasdddddddddddddddddddddddddddd asd asd 
