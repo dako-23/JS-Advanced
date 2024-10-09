@@ -3,10 +3,10 @@ import { createCalculator } from "./addSub.js"
 import { beforeEach } from "mocha";
 
 describe('Add/Subtract', function () {
-    let calc
+    let calc;
 
     beforeEach(() => {
-        calc = createCalculator
+        calc = createCalculator();
     })
 
     it('Has correct value', () => {
