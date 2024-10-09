@@ -14,6 +14,7 @@
   "author": "YG",
   "license": "MIT",
   "dependencies": {
+    "chai": "^5.1.1",
     "mocha": "^10.7.3"
   }
 }
