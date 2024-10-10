@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { isOddOrEven } from '../evenOrOdd.js';
+import { isOddOrEven } from './evenOrOdd.js';
 import { describe, it } from 'mocha';
 
 describe('Check undefined', function () {
