@@ -1,6 +1,4 @@
 import { expect } from 'chai';
-
-
 import { addNumbers } from './app.js';
 
 describe('Adding numbers', function () {
