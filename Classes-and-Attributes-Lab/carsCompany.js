@@ -1,3 +1,5 @@
+
+
 function solve(arr) {
 
     let store = {};
@@ -7,22 +9,29 @@ function solve(arr) {
         let [brand, key, value] = el.split(' | ')
         value = Number(value);
 
-        const firstChar = key[0];
-
-        if (!store.hasOwnProperty(firstChar)) {
-            store[firstChar] = {};
+        if (!store.hasOwnProperty(brand)) {
+            store[brand] = {};
         }
 
-        store[firstChar][key] = value
+        store[brand][key] = value
+
+
 
     }
 
+    Object.entries(store).map((el) => {
 
-    console.log(store);
+        const [key, value] = el
 
+        console.log(key);
 
+        for (data in value) {
 
+            console.log(data, value[data]);
 
+        }
+
+    })
 
 
 
@@ -30,6 +39,7 @@ function solve(arr) {
 solve(['Audi | Q7 | 1000',
     'Audi | Q6 | 100',
     'BMW | X5 | 1000',
+    'BMW | X5 | 1',
     'BMW | X6 | 100',
     'Citroen | C4 | 123',
     'Volga | GAZ-24 | 1000000',
