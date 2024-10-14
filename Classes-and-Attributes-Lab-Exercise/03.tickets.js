@@ -2,7 +2,6 @@ function solve(input, criteria) {
 
     let tickets = [];
 
-
     class Ticket {
         constructor(destination, price, status) {
             this.destination = destination
@@ -25,13 +24,8 @@ function solve(input, criteria) {
         [destination, price, curStatus] = line.split('|')
 
         const ticket = new Ticket(destination, Number(price), curStatus);
-        console.log(ticket);
         
-        
-
         tickets.push(ticket);
-
-
 
     }
 
