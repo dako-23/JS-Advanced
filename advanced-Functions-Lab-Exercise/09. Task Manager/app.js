@@ -2,6 +2,8 @@ function solve() {
 
     const addTaskFormEl = document.querySelector('form');
     const areaOpen = document.querySelector('.wrapper section:nth-child(2) > div:nth-child(2)')
+    console.log(areaOpen);
+
 
     addTaskFormEl.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -9,6 +11,9 @@ function solve() {
         const title = e.target.querySelector('#task').value
         const description = e.target.querySelector('#description').value
         const date = e.target.querySelector('#date').value
+
+        console.log(title, description, date);
+
 
         if (title && description && date) {
 
