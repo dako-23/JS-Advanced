@@ -1,5 +1,3 @@
-
-
 function solve(arr) {
 
     let store = {};
@@ -13,8 +11,11 @@ function solve(arr) {
             store[brand] = {};
         }
 
-        store[brand][key] = value
-
+        if (!store[brand].hasOwnProperty(key)) {
+            store[brand][key] = 0;
+        }
+        
+        store[brand][key] += value
 
 
     }
@@ -27,7 +28,7 @@ function solve(arr) {
 
         for (data in value) {
 
-            console.log(data, value[data]);
+            console.log(`###${data} -> ${value[data]}`);
 
         }
 
