@@ -1,10 +1,37 @@
-function Person(firstName, lastName) {
-    this.firstName = firstName
-    this.lastName = lastName
+class Person {
 
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+
+    }
+
+    sayHello() {
+
+        console.log(`${this.firstName} says hello`);
+
+    }
 
 }
 
-const myPerson = new Person('firstName', 'lastName')
+class Employee extends Person {
+    constructor(firstName, lastName, position) {
+        super(firstName, lastName)
+        this.position = position;
+    }
+    printIfno() {
+        console.log(this.firstName, this.lastName, this.position);
 
-console.log(myPerson);
+    }
+
+}
+
+
+let myPerson = new Person('dako', 'grigorov')
+let fullInfo = new Employee('dako', 'grigorov', 'teacher')
+
+myPerson.sayHello()
+fullInfo.printIfno()
+
+
+
