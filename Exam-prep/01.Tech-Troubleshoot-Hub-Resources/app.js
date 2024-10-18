@@ -2,12 +2,9 @@ window.addEventListener('load', solution);
 
 function solution() {
 
-  const formEl = document.querySelector('.container-text > form')
+  
   const addBtn = document.querySelector('#add-btn')
   addBtn.addEventListener('click', readInput)
-
-  console.log(Array.from(formEl.querySelector('.label')));
-  
 
   const employeeEl = document.querySelector('#employee');
   const categoryEl = document.querySelector('#category');
