@@ -44,7 +44,7 @@ class FlightBookingSystem {
         } else {
             delete this.bookings[passengerName + '-' + flightNumber];
             this.bookingsCount--
-            return `Booking for passenger ${passengerName} on flight ${flightNumber} is cancelled`
+            return `Booking for passenger ${passengerName} on flight ${flightNumber} is cancelled.`
         }
     }
 
@@ -70,7 +70,7 @@ class FlightBookingSystem {
             if (cheapBookings.length > 0) {
                 cheapBookings.forEach((entry) => {
 
-                    output += `${'\n'}${this.bookings[entry].passengerName} booked for flight ${this.bookings[entry].flightNumber}.`
+                    output += '\n' + `${this.bookings[entry].passengerName} booked for flight ${this.bookings[entry].flightNumber}.`
                 })
 
             } else {
@@ -86,7 +86,7 @@ class FlightBookingSystem {
             if (expensiveBookings.length > 0) {
                 expensiveBookings.forEach((entry) => {
 
-                    output += `${'\n'}${this.bookings[entry].passengerName} booked for flight ${this.bookings[entry].flightNumber}.`
+                    output += '\n' + `${this.bookings[entry].passengerName} booked for flight ${this.bookings[entry].flightNumber}.`
                 })
 
             } else {
@@ -110,5 +110,8 @@ console.log(system.bookFlight("Alice", "AA101"));
 console.log(system.bookFlight("Bob", "BB202"));
 console.log(system.showBookings("expensive"));
 console.log(system.showBookings("cheap"));
+
+
+
 
 
